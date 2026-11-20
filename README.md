@@ -22,14 +22,18 @@ Language-specific [Agent Skills](https://agentskills.io/specification) that help
 Run these commands from the project where you want to use the skills. The [Skills CLI](https://github.com/vercel-labs/skills) uses Node.js and supports Codex, Claude Code, Cursor, OpenCode, and [other agents](https://github.com/vercel-labs/skills/blob/main/docs/agents.md).
 
 ```sh
+npx skills add Arion-Dsh/codebase-fit-skills
+```
+
+```sh
 # See the skills available in the repository.
-npx skills add https://github.com/Arion-Dsh/codebase-fit-skills --list
+npx skills add Arion-Dsh/codebase-fit-skills --list
 
 # Install all six skills into the current project for these agents.
-npx skills add https://github.com/Arion-Dsh/codebase-fit-skills --skill '*' -a codex -a claude-code -a cursor -a opencode
+npx skills add Arion-Dsh/codebase-fit-skills --skill '*' -a codex -a claude-code -a cursor -a opencode
 
 # Install one skill for a single agent across projects.
-npx skills add https://github.com/Arion-Dsh/codebase-fit-skills --skill rust -a codex -g
+npx skills add Arion-Dsh/codebase-fit-skills --skill rust -a codex -g
 ```
 
 ## Use
